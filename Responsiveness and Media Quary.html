@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsiveness and Media Query</title>
+</head>
+<style>
+    body, html {
+      height: 100%;
+      margin: 100px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    * {
+      box-sizing: border-box;
+    }
+    
+    .bg-img {
+      /* The image used */
+      background-image: url("bg-intro-desktop.png"); background-color:hsl(0, 100%, 74%);;
+      height: 100%;
+      width: 100%;
+      min-height: 100%;
+    
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      
+    }
+    
+    /* Add styles to the form container */
+    .container1 {
+      position: absolute;
+      left: 550px;
+      width: 500px;
+      margin: 20px;
+      max-width: 500px;
+      padding: 0px;
+      background-color: hsl(0, 100%, 74%);
+    }
+    
+    .container2 {
+      position: absolute;
+      left: 550px;
+      margin: 20px;
+      max-width: 500px;
+      padding: 10px;
+      background-color: white;
+    }
+
+    
+    /* Full-width input fields */
+    input[type=text], input[type=password] {
+      width: 100%;
+      height: auto;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      border: none;
+      background: #f1f1f1;
+    }
+    
+    input[type=text]:focus, input[type=password]:focus {
+      background-color: #ddd;
+      outline: none; 
+    }
+    
+    /* Set a style for the submit button */
+    .button {
+      background-color: #04AA6D;
+      color: white;
+      padding: 16px 20px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      opacity: 0.9;
+    }
+    
+    .button1 {
+      border-radius: 8px; background-color: hsl(248, 32%, 49%);
+    }
+    .button2 {
+      border-radius: 8px; background-color:  hsl(140, 85%, 45%);
+    }
+    
+a {
+  color: red;
+}
+</style>
+<body>
+    
+      
+    <div class="bg-img">
+      <div>
+        <h1 style="color: white; font-size: 32px;position: relative;right:-90px;top: 300px;";>Learn to code by <br> watching others</h1>
+      </div>
+      <form action="/action_page.php" class="container container1">
+        <button type="submit" class="button button1"> <b> Try it free 7days </b> then $20/mo. thereafter</button>
+      </form>
+      <div>
+        <p style="color: white; font-size: 16px;position: relative;right:-90px;top: 300px;";>See how experienced developers solve problems in real time. <br>Watching scripted tutorials is great, but understanding how <br> developers think is invaluable.
+        </p>
+      </div>
+      <form action="/action_page.php" class="container container2">
+        <div>
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" required placeholder="First Name">
+
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Last Name" required>
+    
+          <label for="email">Email</label>
+          <input type="text" placeholder="Email Address" name="email" required>
+    
+          <label for="psw">Password</label>
+          <input type="password" placeholder="Password" name="psw" required>
+    
+          <button type="submit" class="button button2">CLAIM YOUR FREE TRIAL</button>
+          <p style="color: hsl(246, 25%, 77%);">By creating an account, you are agreeing to our <a href="#">Terms and Privacy</a></p>
+        </div>
+      </form>
+    </div>
+    
+    
+    
+</body>
+</html>
+    
